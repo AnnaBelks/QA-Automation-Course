@@ -1,0 +1,165 @@
+Antipattern 1: Module tests without integration tests
+
+What to cover with auto-tests first:
+Integration with covering database interaction
+Integrations with external modules
+Performance tests
+
+What not to cover with auto-tests first:
+Test environment setting details
+Testing non-typical scenarios
+Tests focused on the customization process only
+
+
+Antipattern 2: Integration tests without module tests
+
+What to cover with auto-tests first:
+Registration (User account)
+Search and filter for goods
+Making order/Checkout
+
+What not to cover with auto-tests first:
+Graphic design
+System aspects 
+Third-part services
+
+
+Antipattern 3: Incorrect tests type 
+
+I think that we should use classic test pyramid
+
+
+
+Antipattern 4: 
+
+What to cover with auto-tests first:
+Registration (User account)
+Search and filter for goods
+Making order/Checkout
+
+What not to cover with auto-tests first:
+Low-important features
+Secondary interface elements 
+Outdated functionality
+
+
+Antipattern 5: Testing of internal implementation
+
+What to cover with auto-tests first:
+Testing UI
+Testing functionality 
+Testing user flows
+
+What not to cover with auto-tests first:
+Testing internal methods and data structures
+Testing of algorithm implementation details
+Testing temporal methods or temporal states
+
+Antipattern 6: Overemphasis on test coverage
+
+What to cover with auto-tests first:
+Ordering items
+Searching items
+Authorization and user’s data safety
+
+What not to cover with auto-tests first:
+Internal database management mechanisms
+Unimportant design changes
+Admin tasks that don’t affect users flows 
+
+
+Antipattern 7: Unreliable or slow tests
+
+What to cover with auto-tests first:
+Registration new user
+Making order
+Search items
+
+What not to cover with auto-tests first:
+Animated or dynamic content
+Testing of old browser versions
+Tests which is interacted with external API in real time
+
+
+Antipattern 8: Running tests manually
+
+What to cover with auto-tests first:
+Ordering items
+Searching items
+Authorization/ Registration
+
+What not to cover with auto-tests first:
+Styles and design changes
+Pages with low traffic
+Testing on different browsers and devices
+
+Antipattern 9:  Insufficient attention to the test code
+
+What to cover with auto-tests first:
+Primary business scenarios
+Critical functions
+Often changing functionality
+
+What not to cover with auto-tests first:
+Tests that covers standard scenarios
+Tests that have minimum functionality or business value
+Test that don’t bring additional information in case of failure
+
+
+Antipattern 10: Refusal to write tests for new bugs from production
+
+What to cover with auto-tests first:
+Scenarios of buying and paying items
+Search items and filtering results
+Adaptivity and Cross-browsing
+
+What not to cover with auto-tests first:
+Temporary failures of third-party services
+User input errors
+Changes in third-party services
+
+
+
+
+
+Antipattern 11:  Treating TDD as a religion
+
+What to cover with auto-tests first:
+Functional components with high dynamic
+Critical business process
+Complex user interface components
+
+What not to cover with auto-tests first:
+Pages with low dynamic
+Components that often changing 
+Testing simple UI-elements
+
+
+
+Antipattern 12: “Writing tests without first reading the documentation"
+
+What to cover with auto-tests first:
+Interaction with API
+Checks user interface
+Test functionality of buying
+
+What not to cover with auto-tests first:
+Specific implementation details that do not impact the user experience
+Non-significant changes in internal processes
+Tests that are inconsistent with business logic or key user needs
+
+
+
+
+Antipattern 13:  Poor attitude towards testing out of ignorance
+
+What to cover with auto-tests first:
+Interactive form elements
+Client side of the web application
+User interaction scenarios
+
+What not to cover with auto-tests first:
+Pages with low traffic
+Pages that change often
+Outdated functionality
+
